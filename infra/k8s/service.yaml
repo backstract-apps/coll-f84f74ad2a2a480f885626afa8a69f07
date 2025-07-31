@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: coll-f84f74ad2a2a480f885626afa8a69f07-srv
+spec:
+  selector:
+    app: coll-f84f74ad2a2a480f885626afa8a69f07
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 7070
+  type: ClusterIP
